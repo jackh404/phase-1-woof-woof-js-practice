@@ -77,3 +77,9 @@ fetch('http://localhost:3000/pups')
     doggos.splice(0,0,...data)
     renderDoggos()
 })
+
+document.addEventListener("keyup",e => {
+    console.log(e)
+    if(e.key == 'x')
+        alert("Woof!")
+})
